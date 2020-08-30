@@ -20,7 +20,7 @@ Follow the steps to create a new license file as below:
 - Review and Submit
 - Commit Changes as Required
 
-**NOTE:** You can add GitHub Repository Badges from [Shields IO](https://shields.io/) - if this is a Public Repository.
+**NOTE:** (i) You can add GitHub Repository Badges from [Shields IO](https://shields.io/) - if this is a Public Repository; (ii) TAB (size = 4) has been used for indentation.
 
 ## Creating a NEW Repository from Template
 <p align = "justify">Introduced in 2019, users can now create a repository from templates in GitHub. To do this, simply head over to any repository settings and enable "Template Repository" from the Options Menu. Template Repository is not limited to GitHub, and you can setup your own local-file structure for the same.</p>
@@ -28,4 +28,22 @@ Follow the steps to create a new license file as below:
 ```bash
 # Note the use of rsync
 rsync -rh ~/source/directory /destination/directory
+```
+
+## Setup Information
+<p align = "justify">The template provides a <i>general</i> structure that I use (highly motivated from pandas dir and coding structure). There needs to be several things that need to be changed, just after initializing with the template, which are as follows:</p>
+
+- `PKG` variable under `setup.py` has to be replaced with the module name and directory name `pkg-name`,
+- Define High-Level Version Name (like 0.0.1, 0.1, 1.1, etc.) in `pkg-name/VERSION` file, to be interpreted by `setup.py`, and
+- Define/Check/Update Author Name, Copyright Information (if any) in `setup.py` and `pkg-name/__init__.py`.
+
+**TIP:** Install using `pip` by moving into the parent directory, with the following folder:
+```bash
+debmalya@machine:~$ ls -l
+drwxrwxr-x 3 debmalya debmalya    4096 Aug 30 12:04  PYTHON_GIT_TEMPLATE
+```
+Finally, install it via:
+```python
+pip install ./PYTHON_GIT_TEMPLATE # Normal Installation
+pip install -e ./PYTHON_GIT_TEMPLATE # Installation in Editable Mode
 ```
