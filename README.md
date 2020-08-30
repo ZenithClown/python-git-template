@@ -1,6 +1,11 @@
 
 <h1 align = "center">
 	Python GIT Template <br>
+	<a href="https://github.com/ZenithClown/python-git-template/issues"><img alt="GitHub issues" src="https://img.shields.io/github/issues/ZenithClown/python-git-template?style=plastic"></a>
+	<a href="https://github.com/ZenithClown/python-git-template/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/ZenithClown/python-git-template?style=plastic"></a>
+	<a href="https://github.com/ZenithClown/python-git-template/network"><img alt="GitHub forks" src="https://img.shields.io/github/forks/ZenithClown/python-git-template?style=plastic"></a>
+	<img src = "https://img.shields.io/badge/python-3.6-lightgrey?style=plastic&logo=python">
+	<br>
 	<a href = "https://www.linkedin.com/in/dpramanik/"><img height="16" width="16" src="https://unpkg.com/simple-icons@v3/icons/linkedin.svg"/></a>
 	<a href = "https://github.com/ZenithClown"><img height="16" width="16" src="https://unpkg.com/simple-icons@v3/icons/github.svg"/></a>
 	<a href = "https://gitlab.com/ZenithClown/"><img height="16" width="16" src="https://unpkg.com/simple-icons@v3/icons/gitlab.svg"/></a>
