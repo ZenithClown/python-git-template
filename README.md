@@ -27,8 +27,13 @@ Follow the steps to create a new license file as below:
 
 **NOTE:** (i) You can add GitHub Repository Badges from [Shields IO](https://shields.io/) - if this is a Public Repository; (ii) TAB (size = 4) has been used for indentation.
 
-## Creating a NEW Repository from Template
-<p align = "justify">Introduced in 2019, users can now create a repository from templates in GitHub. To do this, simply head over to any repository settings and enable "Template Repository" from the Options Menu. Template Repository is not limited to GitHub, and you can setup your own local-file structure for the same.</p>
+## Quick Start Guide
+<p align = "justify">Introduced in 2019, users can now create a repository from templates in GitHub. To do this, simply head over to any repository settings and enable "Template Repository" from the Options Menu. When creating a <i>new repository</i> from this template, you can just click on <b><code>Use this template</code></b> available in this repository (refer the picture below).</p>
+
+<img alt = "use_this_template_demo" src = "./assets/use_this_template_demo.png">
+
+### Creating a NEW Repository from Template
+<p align = "justify">Template Repository is not limited to GitHub, and you can setup your own local-file structure for the same. The following describes the usage of <code>rsync</code> which is available in most linux distros, <a href = "https://linux.die.net/man/1/rsync">more information on rsync</a>.</p>
 
 ```bash
 # Note the use of rsync
