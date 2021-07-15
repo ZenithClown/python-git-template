@@ -62,3 +62,6 @@ Finally, install it via:
 pip install ./PYTHON_GIT_TEMPLATE # Normal Installation
 pip install -e ./PYTHON_GIT_TEMPLATE # Installation in Editable Mode
 ```
+
+## flake8 Convention
+Use the command `flake8 . --count --exit-zero --max-complexity=10 --statistics` to generate a report.

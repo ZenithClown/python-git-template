@@ -1,0 +1,15 @@
+[flake8]
+    per-file-ignores =
+        # add per line ignores, if required
+        # F403 '... import *' used; unable to detect undefined names
+        pkg-name/__init__.py: F403
+    max-line-length = 88
+
+    ## the following definations can be ignored
+    ## make necessary changes, if required
+    # E203 whitespace before ':'
+    #   > personal preference,
+    #   > also sometimes violated by black: https://github.com/psf/black
+    # E221 multiple spaces before operator
+    # E251 unexpected spaces around keyword / parameter equals
+    ignore = E203, E221, E251
