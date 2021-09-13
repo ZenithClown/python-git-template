@@ -1,0 +1,2 @@
+# requirements.txt hosts all required dependencies for the current module
+# the file is called by dependabot to check and raise package dependencies

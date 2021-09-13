@@ -35,6 +35,6 @@ setup(
 			"Programming Language :: Python :: 3",
 			# "License :: OSI Approved :: Apache Software License" # Change as Required
 		],
-		python_requires  = ">=3.6",  # Specify Requirement
+		python_requires  = ">=3.7",  # Specify Requirement
 		install_requires = ["numpy"] # Add/Edit as Required
 	)
