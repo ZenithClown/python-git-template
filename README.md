@@ -15,7 +15,9 @@
 	<a href = "https://stackoverflow.com/users/6623589/"><img height="16" width="16" src="https://unpkg.com/simple-icons@v3/icons/stackoverflow.svg"/></a>
 </h1>
 
-<p align = "justify"><b>TEMPLATE Design</b> built specifically for python Language, with necessary file structure as required. This TEMPLATE DOES NOT COME with a LICENSE File, but you can easily add a required license from GitHub. However, special files like .gitignore .gitattributes are included.</p>
+<p align = "justify"><b>TEMPLATE Design</b> built specifically for python Language, with necessary file structure as required. <strike>This TEMPLATE DOES NOT COME with a LICENSE File, but you can easily add a required license from GitHub. However, special files like .gitignore .gitattributes are included.</strike> The TEMPLATE now includes as LICENSE file, and other files are kept as is.</p>
+
+<p><strike>
 
 Follow the steps to create a new license file as below:
 - Open the Repository
@@ -24,6 +26,8 @@ Follow the steps to create a new license file as below:
 - Click on "Choose a License Template"
 - Review and Submit
 - Commit Changes as Required
+
+</strike></p>
 
 **NOTE:** some optional usage, specifications, and helpful links are as below:
   1. You can add GitHub Repository Badges from [Shields IO](https://shields.io/) - if this is a Public Repository;
