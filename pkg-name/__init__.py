@@ -29,7 +29,7 @@ for dependency in hard_dependencies:
 
 # ! raise an error during import if any hard package is missing
 if missing_dependencies:
-    raise ImportError(f"Missing hard dependencies: {", ".join(missing_dependencies)}")
+    raise ImportError(f"Missing hard dependencies: {missing_dependencies}")
 
 # init-time Option Registrations
 from .api import * # noqa: F401, F403 # pyright: ignore[reportMissingImports]
