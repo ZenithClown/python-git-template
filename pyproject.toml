@@ -1,0 +1,53 @@
+[build-system]
+# minimum system requirements for the build system
+requires = ["setuptools >= 80.9.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+# project metadata to be used and parsed by most backends
+name = "pkg-name"
+
+# dynamic tagging for example of version from __version__ attribute
+# can be rendered easly, but first we need to define it as dynamic
+dynamic = ["version"]
+
+# set a list of authors for the project
+authors = [
+  {name = "Debmalya Pramanik (ZenithClown)", email = "dpramanik.official@gmail.com"}
+]
+
+# readme and project descriptions
+readme = "README.md"
+description = "A template repository to start building a Python package."
+
+# python minimum version requirement, must be compatible
+requires-python = ">= 3.11"
+
+# license file, directly change the file to reflect changes
+license = {file = "LICENSE"}
+
+# classifiers for the python package
+# full classifiers list - https://pypi.org/classifiers/
+classifiers = [
+  # maturity/development status of the project
+  "Development Status :: 4 - Beta",
+
+  # license information can also be added as a classifier
+  License :: OSI Approved :: MIT License,
+
+  # supported operating systems/os independent
+  Operating System :: OS Independent,
+
+  # list of supported python versions
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11"
+]
+
+[project.urls]
+# a list of associated URLs that is displayed on the left sidebar
+# https://packaging.python.org/en/latest/specifications/well-known-project-urls/#well-known-labels
+homepage = "http://zenithclown.github.io/"
+sourcecode = "https://github.com/ZenithClown/python-git-template"
+
+[tool.setuptools.dynamic]
+version = {attr = "pkg-name.__version__"}
