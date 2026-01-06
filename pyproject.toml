@@ -33,10 +33,10 @@ classifiers = [
   "Development Status :: 4 - Beta",
 
   # license information can also be added as a classifier
-  License :: OSI Approved :: MIT License,
+  "License :: OSI Approved :: MIT License",
 
   # supported operating systems/os independent
-  Operating System :: OS Independent,
+  "Operating System :: OS Independent",
 
   # list of supported python versions
   "Programming Language :: Python :: 3",
