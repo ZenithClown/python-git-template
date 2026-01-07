@@ -1,15 +1,31 @@
+# Package uses Flake8 for Code Linting, Check Workflow for information
+# docs: https://flake8.pycqa.org/en/latest/user/configuration.html
 [flake8]
+    # Exclude the directory to reduce .flake8 traverse
+    exclue =
+        # .git is for version control, no need to traverse
+        .git,
+
+        # docs can also be safely ignored, check config.py for sphinx
+
+    # Typically for a package, per-files ignore is very useful
     per-file-ignores =
-        # add per line ignores, if required
+        # F401 module imported but unused, useful for init time
         # F403 '... import *' used; unable to detect undefined names
-        pkg-name/__init__.py: F403
+        pkg-name/__init__.py: F401, F403
+
+    # Recommended to restrict in 70 lines, but sometimes violoated,
+    # due to long URLs which can be ignored by setting line length.
     max-line-length = 88
 
-    ## the following definations can be ignored
-    ## make necessary changes, if required
-    # E203 whitespace before ':'
-    #   > personal preference,
-    #   > also sometimes violated by black: https://github.com/psf/black
-    # E221 multiple spaces before operator
-    # E251 unexpected spaces around keyword / parameter equals
-    ignore = E203, E221, E251
+    # Ignore the following error/violation codes, for complete list
+    # https://flake8.pycqa.org/en/latest/user/error-codes.html
+    # https://pycodestyle.pycqa.org/en/latest/intro.html#error-codes
+    ignore =
+        # E203 : White Spaces before symbols, ignored personal preference
+        # E203 is also violated by black: https://github.com/psf/black
+        E203,
+        # 221 multiple spaces before operator
+        E221,
+        # E251 unexpected spaces around keyword / parameter equals
+        E251
