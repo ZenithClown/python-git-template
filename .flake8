@@ -28,4 +28,6 @@
         # 221 multiple spaces before operator
         E221,
         # E251 unexpected spaces around keyword / parameter equals
-        E251
+        E251,
+        # E261 at least two spaces before inline comment
+        E261
