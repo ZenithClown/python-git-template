@@ -1,71 +1,64 @@
+<div align = "center">
 
-<h1 align = "center">
-	Python GIT Template <br>
-	<a href="https://github.com/ZenithClown/python-git-template/issues"><img alt="GitHub issues" src="https://img.shields.io/github/issues/ZenithClown/python-git-template?style=plastic"></a>
-	<a href="https://github.com/ZenithClown/python-git-template/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/ZenithClown/python-git-template?style=plastic"></a>
-	<a href="https://github.com/ZenithClown/python-git-template/network"><img alt="GitHub forks" src="https://img.shields.io/github/forks/ZenithClown/python-git-template?style=plastic"></a>
-	<img src = "https://img.shields.io/badge/python-3.6-lightgrey?style=plastic&logo=python">
-	<br>
-	<a href = "https://www.linkedin.com/in/dpramanik/"><img height="16" width="16" src="https://unpkg.com/simple-icons@v3/icons/linkedin.svg"/></a>
-	<a href = "https://github.com/ZenithClown"><img height="16" width="16" src="https://unpkg.com/simple-icons@v3/icons/github.svg"/></a>
-	<a href = "https://gitlab.com/ZenithClown/"><img height="16" width="16" src="https://unpkg.com/simple-icons@v3/icons/gitlab.svg"/></a>
-	<a href = "https://www.researchgate.net/profile/Debmalya_Pramanik2"><img height="16" width="16" src="https://unpkg.com/simple-icons@v3/icons/researchgate.svg"/></a>
-	<a href = "https://www.kaggle.com/dPramanik/"><img height="16" width="16" src="https://unpkg.com/simple-icons@v3/icons/kaggle.svg"/></a>
-	<a href = "https://app.pluralsight.com/profile/Debmalya-Pramanik/"><img height="16" width="16" src="https://unpkg.com/simple-icons@v3/icons/pluralsight.svg"/></a>
-	<a href = "https://stackoverflow.com/users/6623589/"><img height="16" width="16" src="https://unpkg.com/simple-icons@v3/icons/stackoverflow.svg"/></a>
-</h1>
+# Python GIT Template
 
-<p align = "justify"><b>TEMPLATE Design</b> built specifically for python Language, with necessary file structure as required. <strike>This TEMPLATE DOES NOT COME with a LICENSE File, but you can easily add a required license from GitHub. However, special files like .gitignore .gitattributes are included.</strike> The TEMPLATE now includes as LICENSE file, and other files are kept as is.</p>
+[![GitHub Issues](https://img.shields.io/github/issues/ZenithClown/python-git-template?style=plastic)](https://github.com/ZenithClown/python-git-template/issues)
+[![GitHub Forks](https://img.shields.io/github/forks/ZenithClown/python-git-template?style=plastic)](https://github.com/ZenithClown/python-git-template/network)
+[![GitHub Stars](https://img.shields.io/github/stars/ZenithClown/python-git-template?style=plastic)](https://github.com/ZenithClown/python-git-template/stargazers)
+[![LICENSE File](https://img.shields.io/github/license/ZenithClown/python-git-template?style=plastic)](https://github.com/ZenithClown/python-git-template/blob/master/LICENSE)
 
-<p><strike>
+[![Code Linting (flake8)](https://github.com/ZenithClown/python-git-template/actions/workflows/code-linting.yml/badge.svg)](https://github.com/ZenithClown/python-git-template/actions/workflows/code-linting.yml)
+[![Dependabot Updates](https://github.com/ZenithClown/python-git-template/actions/workflows/dependabot/dependabot-updates/badge.svg)](https://github.com/ZenithClown/python-git-template/actions/workflows/dependabot/dependabot-updates)
 
-Follow the steps to create a new license file as below:
-- Open the Repository
-- Click "Add file" > "Create a New File"
-- Type the name of the File as: LICENSE or LICENSE.txt or LICENSE.md
-- Click on "Choose a License Template"
-- Review and Submit
-- Commit Changes as Required
+</div>
 
-</strike></p>
+<div align = "justify">
 
-**NOTE:** some optional usage, specifications, and helpful links are as below:
-  1. You can add GitHub Repository Badges from [Shields IO](https://shields.io/) - if this is a Public Repository;
-  2. TAB (size = 4) has been used for indentation, except this file (README.md).
-  3. `.github/workflows` is added however, it is recomended that you create your own workflows either using **GitHub Actions** or on your own.
-  4. Basic `docker` files are added for convention, modify it as per requirement. Recomended to delete the file, if not required.
-  5. The repository uses `markdown` instead of `rich text format`, so make necessary changes to file extension/type as required.
+A *simple and modern template* for Python module development with additional workflows, code linting checks, etc. to quickly
+build necessary file structure. The repository is build as a *template repository* that can be used to create the same directory
+structure, branches (optional) and files. To create a repository from this template:
+
+  * Select "Use this Template" > "Create New Repository" from the dropdown menu,
+  * Optionally, you can include all the branches (not-recommended) from the menu, and
+  * Follow the steps to create repository information and choose the visibility.
 
 ## Quick Start Guide
-<p align = "justify">Introduced in 2019, users can now create a repository from templates in GitHub. To do this, simply head over to any repository settings and enable "Template Repository" from the Options Menu. When creating a <i>new repository</i> from this template, you can just click on <b><code>Use this template</code></b> available in this repository (refer the picture below).</p>
 
-<img alt = "use_this_template_demo" src = "./assets/use_this_template_demo.png">
+Introduced in 2019, users can now create a repository from templates in GitHub. To do this, simply head over to any repository
+settings and enable "Template Repository" from the Options Menu. When creating a *new repository* from this template, you can
+just click on **`Use this Template`** available in this repository (refer the picture below).
 
-### Creating a NEW Repository from Template
-<p align = "justify">Template Repository is not limited to GitHub, and you can setup your own local-file structure for the same. The following describes the usage of <code>rsync</code> which is available in most linux distros, <a href = "https://linux.die.net/man/1/rsync">more information on rsync</a>.</p>
+[![Use this Template](./assets/use_this_template_demo.png)](./assets/use_this_template_demo.png)
+
+The template repository is not limited to GitHub, but can be widely used by using simple shell commands to copy and sync the
+contents like below:
 
 ```bash
-# Note the use of rsync
 rsync -rh ~/source/directory /destination/directory
 ```
 
-## Setup Information
-<p align = "justify">The template provides a <i>general</i> structure that I use (highly motivated from pandas dir and coding structure). There needs to be several things that need to be changed, just after initializing with the template, which are as follows:</p>
+The above tool reflects the wide adaptibility and simplicity of usage of the code that provides forward integration with any
+external models/libraries.
 
-- `PKG` variable under `setup.py` has to be replaced with the module name and directory name `pkg-name`,
-- Define High-Level Version Name (like 0.0.1, 0.1, 1.1, etc.) in `pkg-name/VERSION` file, to be interpreted by `setup.py`, and
-- Define/Check/Update Author Name, Copyright Information (if any) in `setup.py` and `pkg-name/__init__.py`.
+## Project License
 
-**TIP:** Install using `pip` by moving into the parent directory, with the following folder:
-```bash
-debmalya@machine:~$ ls -l
-drwxrwxr-x 3 debmalya debmalya    4096 Aug 30 12:04  PYTHON_GIT_TEMPLATE
-```
-Finally, install it via:
-```python
-pip install ./PYTHON_GIT_TEMPLATE # Normal Installation
-pip install -e ./PYTHON_GIT_TEMPLATE # Installation in Editable Mode
-```
+This repository follows [MIT License](./LICENSE) but you're free to use any type of license; choose a type of
+[*licese*](https://choosealicense.com/) as suitable for your project/required by your organization.
 
-## flake8 Convention
+## GitHub Workflows
+
+The project is configured with utility workflows for *continuous integration and development* for automating process like
+dependency checks, code lintings, etc. The following workflows are available.
+
+### Dependabot Updates
+
+The [`workflow`](.github/dependabot.yml) can be used to automatically check for requirements that can be required by the
+package. To use this, a `requirements.txt` file needs to be maintained, on which a new PR is automatically created when a new
+release is available. To use this effectively, create two new labels `pip` and `dependencies` for the repository, as the
+bot can automatically label the new pull requests accordingly.
+
+### Code Linting using Flake8
+
 Use the command `flake8 . --count --exit-zero --max-complexity=10 --statistics` to generate a report.
+
+</div>
