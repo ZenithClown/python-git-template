@@ -21,7 +21,7 @@ readme = "README.md"
 description = "A template repository to start building a Python package."
 
 # python minimum version requirement, must be compatible
-requires-python = ">= 3.11"
+requires-python = ">= 3.10"
 
 # license file, directly change the file to reflect changes
 license = {file = "LICENSE"}
@@ -40,7 +40,10 @@ classifiers = [
 
   # list of supported python versions
   "Programming Language :: Python :: 3",
-  "Programming Language :: Python :: 3.11"
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.13",
+  "Programming Language :: Python :: 3.14",
 ]
 
 [project.urls]
