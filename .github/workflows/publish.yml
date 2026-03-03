@@ -20,7 +20,7 @@ jobs:
       id-token: write  # Required for Trusted Publisher (OIDC)
 
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v6
     - name: Setup Python
       uses: actions/setup-python@v5
       with:
