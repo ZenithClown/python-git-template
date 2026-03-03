@@ -1,4 +1,4 @@
-# -*- encoding: utf-8 -*-
+# -*- coding: utf-8 -*-
 
 """
 Python GIT & Docker Template for PyPI Package
@@ -15,10 +15,11 @@ import os
 
 # ? package follows https://peps.python.org/pep-0440/
 # ? https://python-semver.readthedocs.io/en/latest/advanced/convert-pypi-to-semver.html
-__version__ = open(os.path.join(os.path.dirname(__file__), 'VERSION'), 'r').read().strip()
+with open(os.path.join(os.path.dirname(__file__), "VERSION")) as _f:
+    __version__ = _f.read().strip()
 
 # ! let's check for package hard dependencies which must be available
-hard_dependencies = [] # all should be available in ../requirements.txt
+hard_dependencies = []  # all should be available in ../requirements.txt
 missing_dependencies = []
 
 for dependency in hard_dependencies:
@@ -31,5 +32,5 @@ for dependency in hard_dependencies:
 if missing_dependencies:
     raise ImportError(f"Missing hard dependencies: {missing_dependencies}")
 
-# init-time Option Registrations
-from .api import * # noqa: F401, F403 # pyright: ignore[reportMissingImports]
+# init-time Option Registrations — star import re-exports the public API
+from .api import *  # noqa: F401, F403 # pyright: ignore[reportMissingImports]

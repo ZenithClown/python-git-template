@@ -39,7 +39,7 @@
 *.eps  binary
 
 # Scripts
-# lf = line feeds, used by most *.nix for end-line charecter
+# lf = line feeds, used by most *.nix for end-line character
 # cr = carriage return used as crlf in windows operating system
 *.sh   text eol=lf
 *.bash text eol=lf

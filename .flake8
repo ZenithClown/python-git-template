@@ -2,7 +2,7 @@
 # docs: https://flake8.pycqa.org/en/latest/user/configuration.html
 [flake8]
     # Exclude the directory to reduce .flake8 traverse
-    exclue =
+    exclude =
         # .git is for version control, no need to traverse
         .git,
 

@@ -7,18 +7,19 @@
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 import os
 import sys
+from datetime import date
 
-PKG = "pkg-name" # Edit with your package name
+PKG = "pkg-name"  # Edit with your package name
 
 # ? insert the project paths to let sphinx recognize/find packages
-sys.path.append(os.path.abspath(os.path.join("..")))
+sys.path.insert(0, os.path.abspath(os.path.join("..")))
 
 project = "Package Name"
-copyright = "2021, Debmalya Pramanik"
+copyright = f"2021-{date.today().year}, Debmalya Pramanik"
 author = "Debmalya Pramanik"
-release = open(os.path.abspath(os.path.join("..", PKG, "VERSION")), "r").read()
 
-# import all working modules for autodoc features
+with open(os.path.abspath(os.path.join("..", PKG, "VERSION"))) as _f:
+    release = _f.read().strip()
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
@@ -40,4 +41,4 @@ html_theme = 'sphinx_rtd_theme'
 html_static_path = ['_static']
 
 # html_logo = 'assets/images/logo.jpg'
-html_favicon = 'assets/images/favicon/favicon.ico'
+# html_favicon = 'assets/images/favicon/favicon.ico'  # Create favicon before enabling

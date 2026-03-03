@@ -1,41 +1,32 @@
 # ==========================================
-#   Copyright (c) 2020 Debmalya Pramanik   #
+#   Copyright (c) 2021 Debmalya Pramanik   #
 # ==========================================
 
 # -------------------------------------------------------------------
 #   Mnemonic:   Dockerfile
-#   Abstract:   Hello-World Docker Template
+#   Abstract:   Python Package Template Dockerfile
 #
 #   Date:       15 July 2021
 #   Author:     Debmalya Pramanik
 # -------------------------------------------------------------------
 
-FROM python:3.8
+FROM python:3.10-slim
 
-ENV INSTALL_PATH /usr/src/helloworld
+ENV INSTALL_PATH /usr/src/app
 RUN mkdir -p $INSTALL_PATH
-
-# install net-tools and nano-editor
-RUN apt-get update \
-  && DEBIAN_FRONTEND=noninteractive apt-get install -y \
-    nano \
-    net-tools \
-  && apt-get clean \
-  && rm -rf /var/lib/apt/lists/*
 
 # set working directory
 WORKDIR $INSTALL_PATH
 
-# setup flask environment
 # install all requirements
 COPY requirements.txt requirements.txt
-RUN pip install -r requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
 
 # copy all files and folder to docker
 COPY . .
 
-# install the package with setup tools
-RUN pip install <pkg-name>
+# install the package from source
+RUN pip install --no-cache-dir .
 
 # run the application in docker environment
 # setup code for the same

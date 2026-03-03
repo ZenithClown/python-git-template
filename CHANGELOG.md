@@ -4,12 +4,12 @@
 
 All notable changes to this project will be documented in this file. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this project adheres to [PEP0440](https://peps.python.org/pep-0440/)
-styling guide. For full details, see the [commit logs](https://github.com/sharkutilities/pandas-wizard/commits).
+styling guide. For full details, see the [commit logs](https://github.com/ZenithClown/python-git-template/commits).
 
 ## `PEP0440` Styling Guide
 
 <details>
-<summary>Click to open <code>PEP0440</code> Styilng Guide</summary>
+<summary>Click to open <code>PEP0440</code> Styling Guide</summary>
 
 Packaging for `PyPI` follows the standard PEP0440 styling guide and is implemented by the **`packaging.version.Version`** class. The other
 popular versioning scheme is [`semver`](https://semver.org/), but each build has different parts/mapping.
@@ -41,17 +41,18 @@ under `h3` tags, while the `micro` and "version identifiers" are listed under `h
 changelogs are provided in the detail pane, while the version wise note is as available below.
 
 <details>
-<summary>Click to open Legend(s) Styilng Guide</summary>
+<summary>Click to open Legend(s) Styling Guide</summary>
 
   * 🎉 - **Major Feature** : something big that was not available before.
   * ✨ - **Feature Enhancement** : a miscellaneous minor improvement of an existing feature.
-  * 🛠️ - **Patch/Fix** : something that previously didn’t work as documented – or according to reasonable expectations – should now work.
+  * 🛠️ - **Patch/Fix** : something that previously didn't work as documented – or according to reasonable expectations – should now work.
   * ⚙️ - **Code Efficiency** : an existing feature now may not require as much computation or memory.
   * 💣 - **Code Refactoring** : a breakable change often associated with `major` version bump.
 
-</summary>
 </details>
 
-### Version: `XXX` | Release Date:
+## [Unreleased]
+
+### Version: `0.0.1.dev0` | Release Date: TBD
 
 </div>

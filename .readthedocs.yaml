@@ -5,14 +5,12 @@ build:
   tools:
     python: "3.10"
 
-submodules:
-  include: all
-  recursive: true
-
 python:
   install:
     - requirements: docs/requirements-doc.txt
+    - method: pip
+      path: .
 
 sphinx:
-  fail_on_warning: false
+  fail_on_warning: true
   configuration: docs/conf.py

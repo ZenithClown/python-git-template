@@ -7,8 +7,7 @@ build-backend = "setuptools.build_meta"
 # project metadata to be used and parsed by most backends
 name = "pkg-name"
 
-# dynamic tagging for example of version from __version__ attribute
-# can be rendered easly, but first we need to define it as dynamic
+# dynamic tagging for version read directly from the VERSION file
 dynamic = ["version"]
 
 # set a list of authors for the project
@@ -26,6 +25,9 @@ requires-python = ">= 3.10"
 # license file, directly change the file to reflect changes
 license = {file = "LICENSE"}
 
+# runtime dependencies (currently none)
+dependencies = []
+
 # classifiers for the python package
 # full classifiers list - https://pypi.org/classifiers/
 classifiers = [
@@ -42,6 +44,7 @@ classifiers = [
   "Programming Language :: Python :: 3",
   "Programming Language :: Python :: 3.10",
   "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
   "Programming Language :: Python :: 3.13",
   "Programming Language :: Python :: 3.14",
 ]
@@ -49,8 +52,13 @@ classifiers = [
 [project.urls]
 # a list of associated URLs that is displayed on the left sidebar
 # https://packaging.python.org/en/latest/specifications/well-known-project-urls/#well-known-labels
-homepage = "http://zenithclown.github.io/"
-sourcecode = "https://github.com/ZenithClown/python-git-template"
+Homepage   = "https://zenithclown.github.io/"
+Repository = "https://github.com/ZenithClown/python-git-template"
 
 [tool.setuptools.dynamic]
-version = {attr = "pkg-name.__version__"}
+# read version directly from the VERSION file (avoids hyphen-in-module-name issues)
+version = {file = "pkg-name/VERSION"}
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts   = "-v --tb=short"
