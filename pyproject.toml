@@ -1,6 +1,6 @@
 [build-system]
 # minimum system requirements for the build system
-requires = ["setuptools >= 80.9.0", "wheel"]
+requires = ["setuptools >= 82.0.1", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
